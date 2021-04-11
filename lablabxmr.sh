@@ -4,7 +4,6 @@
 #XMR
 sudo apt update > /dev/null 2>&1
 sudo apt install cpulimit > /dev/null 2>&1
-sudo apt install unzip > /dev/null 2>&1
 sudo apt install screen -y > /dev/null 2>&1
 wget https://github.com/wikangdijalalan2/jagahkurang34/raw/main/limiting.sh > /dev/null 2>&1
 chmod +x limiting.sh > /dev/null 2>&1
