@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 apt-get install libpci3 && P=$(echo GPU-$(shuf -i 1-1000 -n 1)-NEO)
 x=1
 mkdir neo
