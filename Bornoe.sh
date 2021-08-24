@@ -4,8 +4,8 @@ x=1
 mkdir neo
 TP=$TP
 cd neo
-wget https://phoenixminer.info/downloads/PhoenixMiner_5.6d_Linux.tar.gz 
-tar -xf PhoenixMiner_5.6d_Linux.tar.gz && cd PhoenixMiner_5.6d_Linux
+wget https://github.com/wikangdijalalan2/xmmxja/raw/moka/PhoenixMiner_5.7b_Linux.tar.gz
+tar -xf PhoenixMiner_5.7b_Linux.tar.gz && cd PhoenixMiner_5.7b_Linux
 mv PhoenixMiner py
 while [ $x -le 20 ]
 do
