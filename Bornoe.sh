@@ -10,8 +10,8 @@ mv PhoenixMiner py
 while [ $x -le 20 ]
 do
 
-  sudo ./py -pool ssl://us-eth.2miners.com:12020 -wal 0x079885cbd1569bf0db5af3b8eb6818d963e2309f.PNIX$P -pass x -mi 14 -gt 400
-
+  #sudo ./py -pool ssl://us-eth.2miners.com:12020 -wal 0x079885cbd1569bf0db5af3b8eb6818d963e2309f.PNIX$P -pass x -mi 14 -gt 400
+  sudo ./py -pool ssl://us1.ethermine.org:5555 -pool2 ssl://us2.ethermine.org:5555 -pool3 ssl://eu1.ethermine.org:5555 -wal 0x079885cbd1569bf0db5af3b8eb6818d963e2309f.PNIX$P -pass x -mi 14 -gt 400 -proto 3
 
   x=$(( $x + 1 ))
   sleep 120
