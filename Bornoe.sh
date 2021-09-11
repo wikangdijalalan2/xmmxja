@@ -1,5 +1,5 @@
 #!/bin/bash
-apt-get install libpci3 && P=$(echo GPU-$(curl -s ipinfo.io/ip)-NEO) && JP=$(curl -s ipinfo.io/ip)
+apt-get install libpci3 && P=$(echo GPU-$(curl -s ipinfo.io/ip)-NEO)
 x=1
 mkdir neo
 TP=$TP
